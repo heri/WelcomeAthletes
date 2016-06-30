@@ -148,18 +148,19 @@
 <div class="ui large top fixed hidden menu">
   <div class="ui container">
     <a class="active item">Home</a>
-    <a class="item">Athletes</a>
-    <a class="item">Hosts</a>
     <div class="right menu">
-      <div class="ui inverted button">
-        <i class="world icon"></i>
-        FR
-      </div>
+
       <div class="item">
         <a class="ui button">Log in</a>
       </div>
       <div class="item">
         <a class="ui primary button">Sign Up</a>
+      </div>
+      <div class="ui item">
+        <a href="#">
+          <i class="france flag"></i>
+          FR
+        </a>
       </div>
     </div>
   </div>
@@ -168,8 +169,6 @@
 <!-- Sidebar Menu -->
 <div class="ui vertical inverted sidebar menu">
   <a class="active item">Home</a>
-  <a class="item">Athletes</a>
-  <a class="item">Hosts</a>
   <a class="item">Login</a>
   <a class="item">Signup</a>
 </div>
@@ -181,29 +180,25 @@
 
     <div class="ui container">
       <div class="ui large secondary white inverted menu">
-        <a class="toc item">
-
-          <i class="sidebar icon"></i>
-        </a>
         <div class="item">
           <div class="ui logo shape">
             <div class="sides">
               <div class="active ui side">
-                <a href="http://welcomeathletes.com"><img class="ui middle aligned small image" src="http://www.welcomeathletes.com/uploads/7/8/8/2/78826622/1461515087.png"></a>
-                <img class="ui middle aligned image" src="http://triathlonquebec.objectif226.ca/wp-content/uploads/2016/06/logo.png" width="42">
+                <a href="http://welcomeathletes.com"><img class="ui middle aligned image" src="http://www.welcomeathletes.com/uploads/7/8/8/2/78826622/1461515087.png" width="230"></a>
+                <img class="ui middle aligned image" src="http://triathlonquebec.objectif226.ca/wp-content/uploads/2016/06/logo.png" width="80">
               </div>
             </div>
           </div>
         </div>
-        <a class="item">Athletes</a>
-        <a class="item">Hosts</a>
         <div class="right item">
-            <div class="ui inverted button">
-              <i class="world icon"></i>
-              FR
-            </div>
-          <a class="ui inverted button">Log in</a>
+          <a class="ui item ">Log in</a>
           <a class="ui inverted primary button">Sign Up</a>
+          <div class="ui item">
+            <a href="#">
+              <i class="france flag"></i>
+              FR
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -211,18 +206,20 @@
     <div class="ui text container">
       <h1 class="ui inverted header">
         Punchy emotional slogan
+        <div class="sub header">Positive description of WA with clear benefits, value, proposal that exudes solidarity and uniqueness and clears away all doubts</div>
+
       </h1>
-      <h2>Positive description of WA with clear benefits, value, proposal that exudes solidarity and uniqueness and clears away all doubts</h2>
-      <div class="ui hidden divider"></div>
+
       <div class="ui hidden divider"></div>
 
-      <div class="ui action left icon input">
-        <i class="search icon"></i>
-        <input type="text" placeholder="Where?...">
-        <div class="ui fluid search selection dropdown">
+      <div class="ui action left icon input large fluid">
+        <i class="location arrow icon"></i>
+        <input type="text" placeholder="Where?">
+        <div class="ui search selection dropdown mainSearch">
+            <i class="calendar icon"></i>
             <input type="hidden" name="date">
+            <input class="search" tabindex="0"><div class="default text">Date</div>
             <i class="dropdown icon"></i>
-            <input class="search" tabindex="0"><div class="default text">Select Date</div>
             <div class="menu transition hidden" tabindex="-1">
               <div class="item selected" data-value="ad"><i class="ad flag"></i>IronMan tremblan July</div>
               <div class="item" data-value="ae"><i class="ae flag"></i>Marathon Montreal July</div>
@@ -235,38 +232,40 @@
               <div class="item" data-value="ao"><i class="ao flag"></i>Mexico Marathon September</div>
             </div>
           </div>
-        <div class="ui primary button">Search Hosts</div>
+        <div class="ui primary big button">Find Hosts</div>
       </div>
     </div>
 
   </div>
 
-  <div class="ui inline primary cookie nag">
+  <div class="ui inline primary cookie nag yellow" style="background:#ff9163;">
     <span class="title">
-      This is an alpha version of WelcomeAthletes. Most features are still in development. Thank you!
+      This is an alpha version of WelcomeAthletes. Features are still in development. Thank you!
     </span>
     <i class="close icon"></i>
   </div>
 
 
-  <div class="ui vertical stripe segment">
+  <div class="ui vertical stripe">
     <div class="ui text container column grid">
 
-      <h3 class="ui header center">Discover a world of sports solidarity !</h3>
-      <div class="ui hidden divider"></div>
+      <h3 class="ui horizontal header divider" style="color:#e34402;margin-top:0;">
+        The WelcomeAthletes difference
+      </h3>
+      <p>We believe in the community in sports. Train. Compete. Host. Together. Community is the future.</p>
+      <p>And get discounts from respected brands. Get mega-points from Nike. Win a ticket to the Rio Olympic Games. Showcase your solidarity points</p>
+
       <div class="ui hidden divider"></div>
 
 
-      <div class="ui link cards">
+      <div class="ui link stackable centered cards">
         <div class="card">
           <div class="image">
             <img src="host1.jpg">
           </div>
           <div class="content">
             <div class="header">Just for the weekend</div>
-            <div class="meta">
-              <a>3 guests</a>
-            </div>
+
             <div class="description">
               We can welcome 3 athletes or 1 athlete with family for weekends
             </div>
@@ -277,7 +276,7 @@
             </span>
             <span>
               <i class="user icon"></i>
-              2 reviews
+              2 guests
             </span>
           </div>
         </div>
@@ -287,9 +286,6 @@
           </div>
           <div class="content">
             <div class="header">Welcome home!</div>
-            <div class="meta">
-              <span class="date">1 guest</span>
-            </div>
             <div class="description">
               Nous sommes aussi des coureurs et nous pouvons t'héberger dans notre salon
             </div>
@@ -300,7 +296,7 @@
             </span>
             <span>
               <i class="user icon"></i>
-              3 reviews
+              1 guest
             </span>
           </div>
         </div>
@@ -310,9 +306,6 @@
           </div>
           <div class="content">
             <div class="header">hébergement Elyse</div>
-            <div class="meta">
-              <a>1 guest</a>
-            </div>
             <div class="description">
               Je ne fais pas de sport mais je peux héberger pour les compétitions de l'été. Merci de voir la description
             </div>
@@ -323,7 +316,7 @@
             </span>
             <span>
               <i class="user icon"></i>
-              0 review
+              1 guest
             </span>
           </div>
         </div>
@@ -333,9 +326,6 @@
           </div>
           <div class="content">
             <div class="header">Lots of room</div>
-            <div class="meta">
-              <a>3 guests</a>
-            </div>
             <div class="description">
               Athletes welcome !
             </div>
@@ -346,43 +336,101 @@
             </span>
             <span>
               <i class="user icon"></i>
-              1 review
+              3 guests
+            </span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="host2.jpg">
+          </div>
+          <div class="content">
+            <div class="header">Pour triathlètes</div>
+            <div class="description">
+              Passionnée de triathlon! Pasta parties etc. For triathlon training, casual or intense. Groups welcome
+            </div>
+          </div>
+          <div class="extra content">
+            <span class="right floated">
+              Montréal, QC
+            </span>
+            <span>
+              <i class="user icon"></i>
+              3 guests
+            </span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="host3.jpg">
+          </div>
+          <div class="content">
+            <div class="header">A partager</div>
+            <div class="description">
+              Bonjour communauté WelcomeAhletes et je veux bien accueillir des athlètes participants aux Jeux de la Francophonie. Exclusivement femmes 18-26 ans svp. Merci et à bientot
+            </div>
+          </div>
+          <div class="extra content">
+            <span class="right floated">
+              Sherbroooke, QC
+            </span>
+            <span>
+              <i class="user icon"></i>
+              1 guest
             </span>
           </div>
         </div>
       </div>
-      <h4 class="ui horizontal header divider">
-        <a href="#" style="color:#e34402">Upcoming Features</a>
-      </h4>
-      <h3 class="ui header">Did We Tell You About Our Intelligent System?</h3>
-      <p>Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance and host athletes.</p>
-      <h4 class="ui horizontal header divider">
-        <a href="#" style="color:#e34402">The WelcomeAthletes difference</a>
-      </h4>
-      <h3 class="ui header">Our strategy is simple: Solidarity, Community</h3>
-      <p>We believe in the community in sports. Train. Compete. Host. Together. Community is the future.</p>
-      <p>We also want to compensate hosts with valuable gear and discounts from the sports' best brands. Get points from Nike. Win a ticket to the Rio Olympic Games. Showcase your solidarity points</p>
-      <a class="ui large button">Learn more</a>
     </div>
+
   </div>
 
-
-  <div class="ui vertical stripe quote segment">
-    <div class="ui equal width stackable internally celled grid">
+  <div class="ui vertical inverted segment stripe" style="background: #ff9163">
+    <div class="ui equal width stackable internally grid">
       <div class="center aligned row">
         <div class="column">
-          <h3>Triathlon Québec official partner</h3>
-          <p>We thank Triathlon Québec for their trust. We aim for the highest quality of service</p>
+          <h3>Find host</h3>
+          <p><i class="huge grey world icon"></i></p>
+          <p>Starting in Québec and Canada but soon worldwide. USA, France, UK, Australia</p>
         </div>
         <div class="column">
-          <h3>"I shouldn't have gone with Airbnb. WelcomeAthletes is so much better."</h3>
+          <h3>Message and discuss with host</h3>
+          <p><i class="huge grey comments outline icon"></i></p>
           <p>
-            <img src="http://semantic-ui.com/examples/assets/images/avatar/nan.jpg" class="ui avatar image"> <b>Nan</b> Chief Triathlon Officer Acme Sports
+            <b>Nancy</b> Are you a great fit for me?
+            <br/>
+            <b>Elliot</b> Yes I am ! We have so many common interests!
+            <br/>
+            <b>Nancy</b> Great. Deal !
+          </p>
+        </div>
+        <div class="column">
+          <h3>Success : hosting solidarity !</h3>
+          <p><i class="huge grey heart icon primary"></i></p>
+          <p>
+            Pasta parties, connect with locals, the WA difference !
           </p>
         </div>
       </div>
+
     </div>
   </div>
+
+
+  <div class="ui vertical stripe segment">
+    <div class="ui text container column grid">
+
+      <h3 class="ui horizontal header divider" style="color:#e34402">
+        Upcoming Features
+      </h3>
+      <p>We will have more awesome features : community forums, nutrition, training tips, healthy living. Plus events. Plan your trip. Organize events.</p>
+      <p>Bientot!</p>
+      <p>Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance and host athletes.</p>
+
+    </div>
+  </div>
+
+
 
 
 
@@ -390,6 +438,10 @@
   <div class="ui inverted vertical footer segment">
     <div class="ui container">
       <div class="ui stackable inverted divided equal height stackable grid">
+        <div class="seven wide column">
+          <h4 class="ui inverted header">Footer Partners</h4>
+          <p>Logo LOGO logo partners logo PARTNERS logo publicité BANNERS bannières LOGOLOGO PARTNERS.</p>
+        </div>
         <div class="three wide column">
           <h4 class="ui inverted header">Company</h4>
           <div class="ui inverted link list">
@@ -405,12 +457,11 @@
             <a href="#" class="item">Responsability</a>
             <a href="#" class="item">FAQ</a>
             <a href="#" class="item">Terms of Service</a>
+            <a href="#" class="item">Privacy Policiy</a>
+
           </div>
         </div>
-        <div class="seven wide column">
-          <h4 class="ui inverted header">Footer Partners</h4>
-          <p>Logo LOGO logo partners logo PARTNERS logo publicité BANNERS bannières LOGOLOGO PARTNERS.</p>
-        </div>
+
       </div>
     </div>
   </div>

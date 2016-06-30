@@ -10,7 +10,7 @@
   <!-- Site Properties -->
   <title>Homepage - WelcomeAthletes</title>
 
-  <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="semantic/semantic.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>
   <script src="semantic/semantic.min.js"></script>
 
@@ -149,6 +149,12 @@
   <div class="ui container">
     <a class="active item">Home</a>
     <div class="right menu">
+      <div class="ui item">
+        <a href="#">
+          <i class="france flag"></i>
+          FR
+        </a>
+      </div>
 
       <div class="item">
         <a class="ui button">Log in</a>
@@ -156,12 +162,7 @@
       <div class="item">
         <a class="ui primary button">Sign Up</a>
       </div>
-      <div class="ui item">
-        <a href="#">
-          <i class="france flag"></i>
-          FR
-        </a>
-      </div>
+
     </div>
   </div>
 </div>
@@ -169,6 +170,7 @@
 <!-- Sidebar Menu -->
 <div class="ui vertical inverted sidebar menu">
   <a class="active item">Home</a>
+
   <a class="item">Login</a>
   <a class="item">Signup</a>
 </div>
@@ -185,20 +187,13 @@
             <div class="sides">
               <div class="active ui side">
                 <a href="http://welcomeathletes.com"><img class="ui middle aligned image" src="http://www.welcomeathletes.com/uploads/7/8/8/2/78826622/1461515087.png" width="230"></a>
-                <img class="ui middle aligned image" src="http://triathlonquebec.objectif226.ca/wp-content/uploads/2016/06/logo.png" width="80">
               </div>
             </div>
           </div>
         </div>
         <div class="right item">
-          <a class="ui item ">Log in</a>
-          <a class="ui inverted primary button">Sign Up</a>
-          <div class="ui item">
-            <a href="#">
-              <i class="france flag"></i>
-              FR
-            </a>
-          </div>
+          <a class="ui item" href="#" >Log in</a>
+          <a href="#" class="ui inverted primary button">Sign Up</a>
         </div>
       </div>
     </div>
@@ -234,6 +229,11 @@
           </div>
         <div class="ui primary big button">Find Hosts</div>
       </div>
+
+      <div class="ui hidden divider"></div>
+
+      <a href="http://www.triathlonquebec.org/"><img class="ui middle small aligned image" src="tq.png"></a>
+
     </div>
 
   </div>
@@ -259,7 +259,7 @@
 
 
       <div class="ui link stackable centered cards">
-        <div class="card">
+        <a class="card" href="offer.html">
           <div class="image">
             <img src="host1.jpg">
           </div>
@@ -275,12 +275,12 @@
               Ottawa, ON
             </span>
             <span>
-              <i class="user icon"></i>
+              <i class="users icon"></i>
               2 guests
             </span>
           </div>
-        </div>
-        <div class="card">
+        </a>
+        <a class="card" href="offer.html">
           <div class="image">
             <img src="host2.jpg">
           </div>
@@ -299,8 +299,8 @@
               1 guest
             </span>
           </div>
-        </div>
-        <div class="card">
+        </a>
+        <a class="card" href="offer.html">
           <div class="image">
             <img src="host3.jpg">
           </div>
@@ -319,8 +319,8 @@
               1 guest
             </span>
           </div>
-        </div>
-        <div class="card">
+        </a>
+        <a class="card" href="offer.html">
           <div class="image">
             <img src="host1.jpg">
           </div>
@@ -335,52 +335,12 @@
               Miami, Florida
             </span>
             <span>
-              <i class="user icon"></i>
+              <i class="users icon"></i>
               3 guests
             </span>
           </div>
         </div>
-        <div class="card">
-          <div class="image">
-            <img src="host2.jpg">
-          </div>
-          <div class="content">
-            <div class="header">Pour triathlètes</div>
-            <div class="description">
-              Passionnée de triathlon! Pasta parties etc. For triathlon training, casual or intense. Groups welcome
-            </div>
-          </div>
-          <div class="extra content">
-            <span class="right floated">
-              Montréal, QC
-            </span>
-            <span>
-              <i class="user icon"></i>
-              3 guests
-            </span>
-          </div>
-        </div>
-        <div class="card">
-          <div class="image">
-            <img src="host3.jpg">
-          </div>
-          <div class="content">
-            <div class="header">A partager</div>
-            <div class="description">
-              Bonjour communauté WelcomeAhletes et je veux bien accueillir des athlètes participants aux Jeux de la Francophonie. Exclusivement femmes 18-26 ans svp. Merci et à bientot
-            </div>
-          </div>
-          <div class="extra content">
-            <span class="right floated">
-              Sherbroooke, QC
-            </span>
-            <span>
-              <i class="user icon"></i>
-              1 guest
-            </span>
-          </div>
-        </div>
-      </div>
+      </a>
     </div>
 
   </div>
@@ -438,10 +398,7 @@
   <div class="ui inverted vertical footer segment">
     <div class="ui container">
       <div class="ui stackable inverted divided equal height stackable grid">
-        <div class="seven wide column">
-          <h4 class="ui inverted header">Footer Partners</h4>
-          <p>Logo LOGO logo partners logo PARTNERS logo publicité BANNERS bannières LOGOLOGO PARTNERS.</p>
-        </div>
+
         <div class="three wide column">
           <h4 class="ui inverted header">Company</h4>
           <div class="ui inverted link list">
@@ -459,6 +416,19 @@
             <a href="#" class="item">Terms of Service</a>
             <a href="#" class="item">Privacy Policiy</a>
 
+          </div>
+        </div>
+
+        <div class="three wide column">
+          <h4 class="ui inverted header">Partner</h4>
+          <p> <img class="ui middle small aligned image" src="http://triathlonquebec.objectif226.ca/wp-content/uploads/2016/06/logo.png" ></p>
+        </div>
+        <div class="two wide column">
+          <div class="ui item">
+            <a href="#">
+              <i class="france flag"></i>
+              Français
+            </a>
           </div>
         </div>
 

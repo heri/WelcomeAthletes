@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <!-- Site Properties -->
-  <title>Homepage - WelcomeAthletes</title>
+  <title>Just for the weekend - Hosting for Athletes</title>
 
   <link rel="stylesheet" type="text/css" href="semantic/semantic.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>
@@ -49,8 +49,8 @@
     .ui.vertical.stripe {
       padding: 8em 0em;
     }
-    .ui.vertical.stripe h3 {
-      font-size: 2em;
+    .ui.vertical.stripe h2 {
+      font-size: 3em;
     }
     .ui.vertical.stripe .button + h3,
     .ui.vertical.stripe p + h3 {
@@ -63,7 +63,7 @@
       font-size: 1.33em;
     }
     .ui.vertical.stripe .horizontal.divider {
-      margin: 3em 0em;
+      margin: 3em 0em 1.5em 0;
     }
 
     .quote.stripe.segment {
@@ -134,20 +134,20 @@
 <!-- Following Menu -->
 <div class="ui large top fixed menu">
   <div class="ui container">
-    <a class="active item">Home</a>
+    <a class="active item" href="index.html">Home</a>
     <div class="right menu">
       <div class="ui item">
-        <a href="#">
+        <a href="index.html">
           <i class="france flag"></i>
           FR
         </a>
       </div>
 
       <div class="item">
-        <a class="ui button">Log in</a>
+        <a class="ui button"  href="login.html">Log in</a>
       </div>
       <div class="item">
-        <a class="ui primary button">Sign Up</a>
+        <a class="ui primary button" href="login.html">Sign Up</a>
       </div>
 
     </div>
@@ -156,10 +156,10 @@
 
 <!-- Sidebar Menu -->
 <div class="ui vertical inverted sidebar menu">
-  <a class="active item">Home</a>
+  <a class="active item" href="index.html">Home</a>
 
-  <a class="item">Login</a>
-  <a class="item">Signup</a>
+  <a class="item" href="login.html">Login</a>
+  <a class="item" href="login.html">Signup</a>
 </div>
 
 
@@ -174,70 +174,155 @@
   </div>
 
 
-  <div class="ui vertical stripe">
-    <div class="ui text container column grid">
 
-      <h3 class="ui horizontal header divider" style="color:#e34402;margin-top:0;">
+
+  <div class="ui vertical stripe">
+    <div class="ui text container">
+
+      <h2 class="ui horizontal header divider" style="color:#e34402;margin-top:0;">
         Just for the weekend
-      </h3>
+        <div class="ui hidden divider"></div>
+
+        <div class="sub header">
+          <div class="ui image label">
+            <img src="http://semantic-ui.com/images/avatar/small/elliot.jpg">
+            Offered by Alex.
+            <div class="detail">Interests : Triathlon, Cooking, photography</div>
+          </div>
+        </div>
+      </h2>
+
+
 
       <div class="ui"><img class="ui middle huge aligned image" src="host1.jpg" /></div>
 
       <div class="ui hidden divider"></div>
 
-      <div class="ui">
-        <img class="ui small middle aligned image" src="host2.jpg" />
-        <img class="ui small middle aligned image" src="host3.jpg" />
-        <img class="ui small middle aligned image" src="host1.jpg" />
-        <img class="ui small middle aligned image" src="host2.jpg" />
-
-      </div>
-
-      <div class="eleven wide column">
-
-
-
+      <div class="ui centered">
         <p>Bonjour communauté WelcomeAhletes et je veux bien accueillir des athlètes participants aux Jeux de la Francophonie. Merci et à bientot</p>
 
-        <p>Passionnée de triathlon! Pasta parties etc. For triathlon training, casual or intense. Groups welcome</p>
-
-        <p>Hello communauté WelcomeAhletes et je veux bien accueillir des athlètes participants aux Jeux de la Francophonie. Merci communauté et à bientot</p>
-
-        <p>Je ne fais pas de sport mais je peux héberger pour les compétitions de l'été. Merci de voir la description</p>
-
+        <p>Passionnée de triathlon! Pasta parties etc. For triathlon training, casual or intense. Groups welcome. Je ne fais pas de sport mais je peux héberger pour les compétitions de l'été. Merci de voir la description</p>
 
       </div>
-      <div class="five wide column">
-        <div class="no example">
-          <div class="ui card">
-            <div class="blurring dimmable image">
-              <div class="ui dimmer transition hidden">
-                <div class="content">
-                  <div class="center">
-                    <div class="ui inverted button">Contact host</div>
-                  </div>
-                </div>
-              </div>
-              <img src="http://semantic-ui.com/images/avatar2/large/rachel.png">
-            </div>
-            <div class="content">
-              <div class="header">Rachel Maddaw</div>
-              <div class="meta">
-                <a class="group">Host</a>
-              </div>
-            </div>
-            <div class="extra content">
-              <a class="right floated created">
-                Triathlon
-              </a>
-              <a class="friends">
-                <i class="user icon"></i>
-                3 reviews
-              </a>
-            </div>
-          </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="ui vertical stripe quote segment"  style="background-image: url(pattern.png);">
+    <div class="ui equal width stackable internally grid">
+      <div class="center aligned row">
+        <div class="column">
+          <i class="huge location arrow icon"></i>
+          <p>St-Hyppolite, QC</p>
+        </div>
+        <div class="column">
+          <i class="huge primary hotel icon"></i>
+          <p>Living Room - 3 guests</p>
+        </div>
+        <div class="column">
+          <i class="huge wifi icon"></i>
+          <p>Wifi, Bathoom, TV, Kitchen</p>
         </div>
 
+        <div class="column">
+          <i class="huge heart icon"></i>
+          <p>Interests : Triathlon, cooking, photography</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui vertical stripe ">
+    <div class="ui middle aligned stackable grid text container centered">
+      <h2 class="ui header" style="color:#e34402;margin-top:0;">
+        Image gallery
+      </h2>
+      <div class="row">
+        <div class="eight wide column">
+          <p>Triathletes in our home this past sunday. We had japanese sushi. Much fun was had :D</p>
+          <p>If you come, we would appreciate if you share your favorite recipe as well :D</p>
+        </div>
+        <div class="eight wide right floated column">
+          <img src="host1.jpg" class="ui large image">
+        </div>
+      </div>
+      <div class="ui hidden divider"></div>
+      <div class="row">
+        <div class="eight wide column">
+          <img src="triathletes.jpg" class="ui large image">
+        </div>
+        <div class="eight wide right floated column">
+          <p>We also have a very large living room. It's not the Hilton but we can accomodate many people ! </p>
+        </div>
+
+      </div>
+      <div class="ui hidden divider"></div>
+      <div class="row">
+        <div class="eight wide column">
+          <p>This room is free in the summer and can accomodate up to 2 people. Good light and karna. You will get plenty of energy ! Ask us if it's available</p>
+        </div>
+        <div class="eight wide right floated column">
+          <img src="host3.jpg" class="ui large image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui vertical stripe center aligned segment">
+    <div class="ui text container">
+
+      <h2 class="ui horizontal header divider" style="color:#e34402;margin-top:0;">
+        Get hosting with Alex
+      </h1>
+      <div class="ui centered">
+        <p>This is not a commercial service but community hosting and as such, we ask you to be respectful. There can be changes to reservation.</p>
+
+        <p>We recommend discussing at least 3 weeks in advance</p>
+      </div>
+
+
+      <div class="ui hidden divider"></div>
+
+
+      <div class="ui centered action left icon input large fluid">
+        <div class="ui search selection dropdown mainSearch">
+            <i class="calendar icon"></i>
+            <input type="hidden" name="date">
+            <input class="search" tabindex="0"><div class="default text">Arrival</div>
+            <i class="dropdown icon"></i>
+            <div class="menu transition hidden" tabindex="-1">
+              <div class="item selected" data-value="ad"><i class="ad flag"></i>IronMan tremblan July</div>
+              <div class="item" data-value="ae"><i class="ae flag"></i>Marathon Montreal July</div>
+              <div class="item" data-value="af"><i class="af flag"></i>Spartan Race Tremblant July</div>
+              <div class="item" data-value="ag"><i class="ag flag"></i>Marathon Boston August</div>
+              <div class="item" data-value="ai"><i class="ai flag"></i>Marathon New York City August</div>
+              <div class="item" data-value="al"><i class="al flag"></i>Triathon Olympic Paris</div>
+              <div class="item" data-value="am"><i class="am flag"></i>Rio Olympic Games Triathlon August</div>
+              <div class="item" data-value="an"><i class="an flag"></i>Rio Olympic Games Decathlon August</div>
+              <div class="item" data-value="ao"><i class="ao flag"></i>Mexico Marathon September</div>
+            </div>
+          </div>
+
+        <div class="ui search selection dropdown mainSearch">
+            <i class="calendar icon"></i>
+            <input type="hidden" name="date">
+            <input class="search" tabindex="0"><div class="default text">Departure</div>
+            <i class="dropdown icon"></i>
+            <div class="menu transition hidden" tabindex="-1">
+              <div class="item selected" data-value="ad"><i class="ad flag"></i>IronMan tremblan July</div>
+              <div class="item" data-value="ae"><i class="ae flag"></i>Marathon Montreal July</div>
+              <div class="item" data-value="af"><i class="af flag"></i>Spartan Race Tremblant July</div>
+              <div class="item" data-value="ag"><i class="ag flag"></i>Marathon Boston August</div>
+              <div class="item" data-value="ai"><i class="ai flag"></i>Marathon New York City August</div>
+              <div class="item" data-value="al"><i class="al flag"></i>Triathon Olympic Paris</div>
+              <div class="item" data-value="am"><i class="am flag"></i>Rio Olympic Games Triathlon August</div>
+              <div class="item" data-value="an"><i class="an flag"></i>Rio Olympic Games Decathlon August</div>
+              <div class="item" data-value="ao"><i class="ao flag"></i>Mexico Marathon September</div>
+            </div>
+          </div>
+        <div class="ui primary big button"><i class="left comments outline icon"></i> Discuss with Alex </div>
       </div>
 
     </div>

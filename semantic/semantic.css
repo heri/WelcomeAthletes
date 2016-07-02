@@ -4192,7 +4192,7 @@ input::selection {
 
 .ui.primary.buttons .button:hover,
 .ui.primary.button:hover {
-  background-color: #ff9163;
+  background-color: #f86f36;
   color: #FFFFFF;
   text-shadow: none;
 }

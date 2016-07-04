@@ -106,11 +106,6 @@
       }
     }
 
-    #hosts p, #upcoming p {
-      font-size: 16px;
-      line-height: 1.5;
-    }
-
 
   </style>
 
@@ -121,18 +116,18 @@
   $(document)
     .ready(function() {
 
-      // // fix menu when passed
-      // $('.masthead')
-      //   .visibility({
-      //     once: false,
-      //     onBottomPassed: function() {
-      //       $('.fixed.menu').transition('fade in');
-      //     },
-      //     onBottomPassedReverse: function() {
-      //       $('.fixed.menu').transition('fade out');
-      //     }
-      //   })
-      // ;
+      // fix menu when passed
+      $('.masthead')
+        .visibility({
+          once: false,
+          onBottomPassed: function() {
+            $('.fixed.menu').transition('fade in');
+          },
+          onBottomPassedReverse: function() {
+            $('.fixed.menu').transition('fade out');
+          }
+        })
+      ;
 
       // create sidebar and attach to menu open
       $('.ui.sidebar')
@@ -150,9 +145,9 @@
 <body>
 
 <!-- Following Menu -->
-<div class="ui large top fixed menu">
+<div class="ui large top fixed hidden menu">
   <div class="ui container">
-    <a class="active item" href="index.html"><img class="ui small aligned image" src="http://www.welcomeathletes.com/uploads/7/8/8/2/78826622/1461515087.png"></a>
+    <a class="active item" href="index.html"><img class="ui tiny aligned image" src="http://www.welcomeathletes.com/uploads/7/8/8/2/78826622/1461515087.png"></a>
     <div class="right menu">
       <div class="ui item">
         <a href="#">
@@ -185,7 +180,7 @@
 <div class="pusher">
   <div class="ui inverted vertical masthead center aligned segment">
 
-    <!-- <div class="ui container">
+    <div class="ui container">
       <div class="ui large secondary white inverted menu">
         <div class="item">
           <div class="ui logo shape">
@@ -207,7 +202,7 @@
           <a href="login.html" class="ui inverted primary button">Sign Up</a>
         </div>
       </div>
-    </div> -->
+    </div>
 
     <div class="ui text container">
       <h1 class="ui inverted header">
@@ -243,7 +238,7 @@
 
       <div class="ui hidden divider"></div>
 
-      <a href="http://www.triathlonquebec.org/"><img class="ui middle aligned image" src="tq.png" width="195px"></a>
+      <a href="http://www.triathlonquebec.org/"><img class="ui middle aligned image" src="tq.png" width="210px"></a>
 
     </div>
 
@@ -257,10 +252,10 @@
   </div>
 
 
-  <div class="ui vertical stripe" id="hosts">
+  <div class="ui vertical stripe">
     <div class="ui text container column grid">
 
-      <h3 class="ui horizontal header divider" style="color:#e34402;margin:0 0 1.5em;">
+      <h3 class="ui horizontal header divider" style="color:#e34402;margin-top:0;">
         The WelcomeAthletes difference
       </h3>
       <p>We believe in the community in sports. Train. Compete. Host. Together. Community is the future.</p>
@@ -356,21 +351,16 @@
 
   </div>
 
-  <div class="ui vertical howitworks segment stripe" style="background-image: url(pattern2.png);padding:6em 0;">
-    <div class="ui text container column grid centered">
-      <h3 class="ui  header" style="color:#e34402;margin:0 0 1em;">
-        How it works
-      </h3>
-    </div>
+  <div class="ui vertical howitworks segment stripe" style="background-image: url(pattern2.png);">
     <div class="ui equal width stackable internally grid">
       <div class="center aligned row">
         <div class="column">
-          <h3>Discover Welcoming People</h3>
+          <h3>See hosts in competition cities</h3>
           <img class="image " src="map-search.png" />
           <p>Starting in Québec and Canada but soon worldwide</p>
         </div>
         <div class="column">
-          <h3 class="center">Find a host</h3>
+          <h3 class="center">Connect with host</h3>
           <div class="ui cards centered">
             <div class="card">
               <div class="ui comments content left aligned">
@@ -414,7 +404,7 @@
                     </div>
                     <div class="text">
                       Hello Alexa! <br/><br/>
-                      I'm competing at the Mont-Tremblant Ironman in July
+                      I'm competing at the Mont-Tremblant Ironman in July and looking for a place to stay
                     </div>
                   </div>
                 </div>
@@ -423,7 +413,7 @@
           </div>
         </div>
         <div class="column">
-          <h3>Rest in best conditions</h3>
+          <h3>Success !</h3>
           <div class="ui cards centered">
             <div class="card">
               <div class="image">
@@ -447,10 +437,10 @@
   </div>
 
 
-  <div class="ui vertical stripe segment" id="upcoming">
+  <div class="ui vertical stripe segment">
     <div class="ui text container column grid">
 
-      <h3 class="ui horizontal header divider" style="color:#e34402;margin:0 0 1.5em;">
+      <h3 class="ui horizontal header divider" style="color:#e34402;margin-top:1em;">
         Upcoming Features
       </h3>
       <p>We will have more awesome features : community forums, nutrition, training tips, healthy living. Plus events. Plan your trip. Organize events.</p>

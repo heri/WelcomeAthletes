@@ -111,11 +111,6 @@
       line-height: 1.5;
     }
 
-    .menu a {
-      color: rgba(0, 0, 0, 0.6);
-      font-weight: bold;
-    }
-
 
   </style>
 
@@ -157,7 +152,7 @@
 <!-- Following Menu -->
 <div class="ui large top fixed menu">
   <div class="ui container">
-    <a class="item" href="index.html"><img class="ui tiny aligned image" src="http://www.welcomeathletes.com/uploads/7/8/8/2/78826622/1461515087.png"></a>
+    <a class="active item" href="index.html"><img class="ui small aligned image" src="http://www.welcomeathletes.com/uploads/7/8/8/2/78826622/1461515087.png"></a>
     <div class="right menu">
       <div class="ui item">
         <a href="#">
@@ -248,11 +243,7 @@
 
       <div class="ui hidden divider"></div>
 
-      <div class="ui right aligned grid">
-        <div class="right floated left aligned four wide column">
-          <a href="http://www.triathlonquebec.org/"><img class="ui middle aligned image" src="tq.png" width="200px"></a>
-        </div>
-      </div>
+      <a href="http://www.triathlonquebec.org/"><img class="ui middle aligned image" src="tq.png" width="195px"></a>
 
     </div>
 
@@ -365,7 +356,7 @@
 
   </div>
 
-  <div class="ui vertical howitworks segment stripe" style="background-image: url(pattern2.png);padding:4em 0;">
+  <div class="ui vertical howitworks segment stripe" style="background-image: url(pattern2.png);padding:6em 0;">
     <div class="ui text container column grid centered">
       <h3 class="ui  header" style="color:#e34402;margin:0 0 1em;">
         How it works
@@ -375,19 +366,80 @@
       <div class="center aligned row">
         <div class="column">
           <h3>Discover Welcoming People</h3>
-          <i class="huge black world icon"></i>
+          <img class="image " src="map-search.png" />
           <p>Starting in Québec and Canada but soon worldwide</p>
         </div>
         <div class="column">
           <h3 class="center">Find a host</h3>
-          <i class="huge black comments outline icon"></i>
-          <p>Discuss on dates and hosting conditions</p>
-
+          <div class="ui cards centered">
+            <div class="card">
+              <div class="ui comments content left aligned">
+                <div class="comment">
+                  <a class="avatar">
+                    <img src="http://semantic-ui.com/images/avatar/small/matt.jpg">
+                  </a>
+                  <div class="content">
+                    <a class="author">Matt</a>
+                    <div class="metadata">
+                      <span class="date">Today at 08:22AM</span>
+                    </div>
+                    <div class="text">
+                      Amazing! Thanks !
+                    </div>
+                  </div>
+                </div>
+                <div class="comment">
+                  <a class="avatar">
+                    <img src="http://semantic-ui.com/images/avatar/small/jenny.jpg">
+                  </a>
+                  <div class="content">
+                    <a class="author">Alexa C.</a>
+                    <div class="metadata">
+                      <span class="date">Yesterday at 10:33PM</span>
+                    </div>
+                    <div class="text">
+                      Hi Matt ! Nice to meet<br/><br/>
+                      We can host, we will have a room for you at that date!
+                    </div>
+                  </div>
+                </div>
+                <div class="comment">
+                  <a class="avatar">
+                    <img src="http://semantic-ui.com/images/avatar/small/matt.jpg">
+                  </a>
+                  <div class="content">
+                    <a class="author">Matt A.</a>
+                    <div class="metadata">
+                      <span class="date">5 days ago</span>
+                    </div>
+                    <div class="text">
+                      Hello Alexa! <br/><br/>
+                      I'm competing at the Mont-Tremblant Ironman in July
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="column">
           <h3>Rest in best conditions</h3>
-          <i class="huge black heart icon primary"></i>
-          <p>Stay with people interested in you, not in a commercial space</p>
+          <div class="ui cards centered">
+            <div class="card">
+              <div class="image">
+                <img class="ui wireframe image" src="athlete-happy.jpg">
+              </div>
+              <div class="content">
+                <div class="description">
+                 Inspiring connection - we share a passion for triathlon
+                </div>
+              </div>
+              <div class="extra">
+                Rating:
+                <div class="ui star rating" data-rating="5"><i class="icon active"></i><i class="icon active"></i><i class="icon active"></i><i class="icon active"></i><i class="icon active"></i><i class="icon active"></i></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 

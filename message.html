@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Site Properties -->
+  <title>Just for the weekend - Hosting for Athletes</title>
+
+  <link rel="stylesheet" type="text/css" href="semantic/semantic.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>
+  <script src="semantic/semantic.min.js"></script>
+
+  <style type="text/css">
+
+    .hidden.menu {
+      display: none;
+    }
+
+    .masthead {
+      background-image: url('triathletes.jpg') !important;
+      background-size: cover !important;
+    }
+
+    .masthead.segment {
+      min-height: 700px;
+      padding: 1em 0em;
+    }
+    .masthead .logo.item img {
+      margin-right: 1em;
+    }
+    .masthead .ui.menu .ui.button {
+      margin-left: 0.5em;
+    }
+    .masthead h1.ui.header {
+      margin-top: 3em;
+      margin-bottom: 0em;
+      font-size: 4em;
+      font-weight: normal;
+    }
+    .masthead h2 {
+      font-size: 1.7em;
+      font-weight: normal;
+    }
+
+    .ui.vertical.stripe {
+      padding: 8em 0em;
+    }
+    .ui.vertical.stripe h2 {
+      font-size: 3em;
+    }
+    .ui.vertical.stripe .button + h3,
+    .ui.vertical.stripe p + h3 {
+      margin-top: 3em;
+    }
+    .ui.vertical.stripe .floated.image {
+      clear: both;
+    }
+    .ui.vertical.stripe p {
+      font-size: 1.33em;
+    }
+    .ui.vertical.stripe .horizontal.divider {
+      margin: 3em 0em 1.5em 0;
+    }
+
+    .quote.stripe.segment {
+      padding: 0em;
+    }
+    .quote.stripe.segment .grid .column {
+      padding-top: 5em;
+      padding-bottom: 5em;
+    }
+
+    .footer.segment {
+      padding: 5em 0em;
+    }
+
+    .secondary.pointing.menu .toc.item {
+      display: none;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .ui.fixed.menu {
+        display: none !important;
+      }
+      .secondary.pointing.menu .item,
+      .secondary.pointing.menu .menu {
+        display: none;
+      }
+      .secondary.pointing.menu .toc.item {
+        display: block;
+      }
+      .masthead.segment {
+        min-height: 350px;
+      }
+      .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+      }
+      .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+      }
+    }
+
+    .menu a {
+      color: rgba(0, 0, 0, 0.6);
+      font-weight: bold;
+    }
+
+    #features .icon {
+      color: #e34402;
+    }
+
+    .overlay.fixed {
+      max-width: 260px;
+    }
+
+    #host .avatar img{
+      width: 3em;
+      height: 3em;
+      border-radius: 0;
+    }
+
+    .overlay .ui.selection.dropdown {
+      min-width: 100%;
+    }
+
+    .overlay .ui.big.button {
+      min-width: 100%;
+    }
+
+
+  </style>
+
+  <script src="semantic/components/visibility.js"></script>
+  <script src="semantic/components/sidebar.js"></script>
+  <script src="semantic/components/transition.js"></script>
+  <script>
+  $(document)
+    .ready(function() {
+
+      // create sidebar and attach to menu open
+      $('.ui.sidebar')
+        .sidebar('attach events', '.toc.item')
+      ;
+
+      $('.cookie.nag')
+        .nag('show')
+      ;
+
+      $('.overlay').visibility({
+        type: 'fixed',
+        offset: 80
+      });
+
+    })
+  ;
+  </script>
+</head>
+<body>
+
+<!-- Following Menu -->
+<div class="ui large top fixed menu">
+  <div class="ui container">
+    <a class="item" href="index.html"><img class="ui tiny aligned image" src="http://www.welcomeathletes.com/uploads/7/8/8/2/78826622/1461515087.png"></a>
+    <div class="right menu">
+      <div class="ui item">
+        <a href="#">
+          <i class="france flag"></i>
+          FR
+        </a>
+      </div>
+
+      <div class="item">
+        <a class="ui button" href="login.html">Log in</a>
+      </div>
+      <div class="item">
+        <a class="ui primary button"  href="login.html">Sign Up</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Sidebar Menu -->
+<div class="ui vertical inverted sidebar menu">
+  <a class="active item" href="index.html"><img class="ui small aligned image" src="http://www.welcomeathletes.com/uploads/7/8/8/2/78826622/1461515087.png"></a>
+
+  <a class="item" href="login.html">Login</a>
+  <a class="item" href="login.html">Signup</a>
+</div>
+
+
+<!-- Page Contents -->
+<div class="pusher" style="margin-top:4em">
+
+  <div class="ui inline primary cookie nag yellow" style="background:#f86f36;">
+    <span class="title">
+      This is an alpha version of WelcomeAthletes. Features are still in development. Thank you!
+    </span>
+    <i class="close icon"></i>
+  </div>
+
+  <div class="ui stackable container" style="margin:3em 0;">
+
+      <div class="ui">
+
+
+          <div class="ui vertical ">
+            <div class="ui text">
+
+              <h1 class="ui header" style="color:#e34402">
+                Request 12th July 2016 to 16th July 2016 - 3 guests
+                <div class="sub header">
+                   Montréal QC
+                </div>
+              </h1>
+
+
+
+
+
+              <div class="ui comments content left aligned">
+
+                <div class="comment">
+                  <a class="avatar">
+                    <img src="http://semantic-ui.com/images/avatar/small/matt.jpg">
+                  </a>
+                  <div class="content">
+                    <a class="author" href="#">Matt</a>
+                    <div class="metadata">
+                      <span class="date">5 days ago</span>
+                    </div>
+                    <div class="text">
+                      Bonjour - Je viens de Caen - France et je me suis inscrit au Ironman de Montréal. On serait une petite équipe de trois, moi, ma partenaire et notre enfant de 6 ans .
+
+                    </div>
+                  </div>
+                </div>
+                <div class="ui hidden divider"></div>
+                <div class="ui right aligned grid">
+                  <div class="comment column">
+                    <a class="avatar" style="float:right">
+                      <img src="http://semantic-ui.com/images/avatar/small/jenny.jpg">
+                    </a>
+                    <div class="content" style="margin-right: 3.5em">
+                      <a class="author">Stephanie</a>
+                      <div class="metadata">
+                        <span class="date">Yesterday at 10:33PM</span>
+                      </div>
+
+                      <div class="text">
+                        Salut Mat ! 3 personnes c'est bcp. C'est quoi les dates déja? Si vous etes flexibles on peut héberger seulement la journée d'avant et le jour de la competition. Sinon on est deja pris
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="comment">
+                  <a class="avatar">
+                    <img src="http://semantic-ui.com/images/avatar/small/matt.jpg">
+                  </a>
+                  <div class="content">
+                    <a class="author" href="#">Mat</a>
+                    <div class="metadata">
+                      <span class="date">Today at 08:22AM</span>
+                    </div>
+
+                    <div class="text">
+                      Merci Stephanie - Effectivement on a prevu de rester 4 jours. Si on vient seulement à deux, penses-tu qu'on puisses rester deux jours de plus?
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ui hidden divider"></div>
+                <div class="ui right aligned grid">
+                  <div class="comment column">
+                    <a class="avatar" style="float:right">
+                      <img src="http://semantic-ui.com/images/avatar/small/jenny.jpg">
+                    </a>
+                    <div class="content" style="margin-right: 3.5em">
+                      <a class="author">Stephanie</a>
+                      <div class="metadata">
+                        <span class="date">Today at 10:33AM</span>
+                      </div>
+
+                      <div class="text">
+                        J'en parle à mon coloc et je te reviens dans la journée
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="comment">
+                  <a class="avatar">
+                    <img src="http://semantic-ui.com/images/avatar/small/matt.jpg">
+                  </a>
+                  <div class="content">
+                    <a class="author" href="#">Mat</a>
+                    <div class="metadata">
+                      <span class="date">Today at 11:02AM</span>
+                    </div>
+
+                    <div class="text">
+                      Top  !
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ui hidden divider"></div>
+
+                <div class="ui link stackable centered cards">
+
+                  <div class="ui green labeled submit icon button">
+                    <i class="icon checkmark"></i> Accept Hosting
+                  </div>
+                  <div class="ui red labeled submit icon button">
+                    <i class="icon dont"></i> Decline
+                  </div>
+                </div>
+
+                <div class="ui hidden divider"></div>
+
+                <form class="ui reply form">
+                  <div class="field">
+                    <textarea></textarea>
+                  </div>
+                  <div class="ui labeled submit icon button">
+                    <i class="icon edit"></i> Send Private Reply
+                  </div>
+
+
+                </form>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+      </div>
+
+  </div>
+
+
+
+
+  <div class="ui inverted vertical footer segment" style="z-index: 10">
+    <div class="ui container">
+      <div class="ui stackable inverted divided equal height stackable grid">
+
+        <div class="three wide column">
+          <h4 class="ui inverted header">Company</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Sitemap</a>
+            <a href="#" class="item">Contact Us</a>
+            <a href="#" class="item">Religious Ceremonies</a>
+            <a href="#" class="item">Gazebo Plans</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header">Hosting</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Responsability</a>
+            <a href="#" class="item">FAQ</a>
+            <a href="#" class="item">Terms of Service</a>
+            <a href="#" class="item">Privacy Policiy</a>
+
+          </div>
+        </div>
+
+        <div class="three wide column">
+          <h4 class="ui inverted header">Partner</h4>
+          <p> <img class="ui middle small aligned image" src="http://triathlonquebec.objectif226.ca/wp-content/uploads/2016/06/logo.png" ></p>
+        </div>
+        <div class="two wide column">
+          <div class="ui item">
+            <a href="#">
+              <i class="france flag"></i>
+              Français
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

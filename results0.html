@@ -94,7 +94,7 @@
   }
 
   .menu .logo img {
-    width:200px;
+    width:130px
   }
 
   .ui.selection.dropdown {
@@ -180,7 +180,7 @@
   <div class="ui large top fixed menu">
     <div class="ui container">
 
-      <a class="item borderless logo" href="index.html" style=""><img class="ui aligned image" src="logo.png"></a>
+      <a class="item borderless logo" href="index.html" style=""><img class="ui aligned image" src="http://www.welcomeathletes.com/uploads/7/8/8/2/78826622/1461515087.png"></a>
       <div class="right menu">
         <div class="ui item language">
           <a href="#">
@@ -202,7 +202,7 @@
 
 
 <!-- Page Contents -->
-<div class="pusher" style="margin-top:4em">
+<div class="pusher" style="margin-top:5.5em">
 
   <div class="ui inline primary cookie nag yellow" style="background:#f86f36;">
     <span class="title">
@@ -213,78 +213,62 @@
 
 
   <div class="ui vertical stripe segment" id="hosts">
+    <div class="ui stackable grid container">
+      <h3 class="ui header">
+        Search hosts
+      </h3>
+      <div class="ui hidden divider"></div>
 
-    <div class="ui stackable grid centered container">
-      <div class="row">
-        <h3 class="ui header">
-          Search hosts
-        </h3>
-      </div>
-
-        <div class="ui row">
+        <div class="ui">
           <div class="ui action left icon large input ">
             <i class="location arrow icon"></i>
-            <input type="text" placeholder="Montréal" value="Montréal">
+            <input type="text" placeholder="Montréal">
+            <div class="ui search selection dropdown mainSearch">
+                <i class="calendar icon"></i>
+                <input type="hidden" name="date">
+                <input class="search" tabindex="0"><div class="default text">Arrival Date</div>
+                <i class="dropdown icon"></i>
+                <div class="menu transition hidden" tabindex="-1">
+                  <div class="item selected" data-value="ad"><i class="ad flag"></i>IronMan tremblan July</div>
+                  <div class="item" data-value="ae"><i class="ae flag"></i>Marathon Montreal July</div>
+                  <div class="item" data-value="af"><i class="af flag"></i>Spartan Race Tremblant July</div>
+                  <div class="item" data-value="ag"><i class="ag flag"></i>Marathon Boston August</div>
+                  <div class="item" data-value="ai"><i class="ai flag"></i>Marathon New York City August</div>
+                  <div class="item" data-value="al"><i class="al flag"></i>Triathon Olympic Paris</div>
+                  <div class="item" data-value="am"><i class="am flag"></i>Rio Olympic Games Triathlon August</div>
+                  <div class="item" data-value="an"><i class="an flag"></i>Rio Olympic Games Decathlon August</div>
+                  <div class="item" data-value="ao"><i class="ao flag"></i>Mexico Marathon September</div>
+                </div>
+              </div>
+              <div class="ui search selection dropdown mainSearch">
+                  <i class="calendar icon"></i>
+                  <input type="hidden" name="date">
+                  <input class="search" tabindex="0"><div class="default text">Departure Date</div>
+                  <i class="dropdown icon"></i>
+                  <div class="menu transition hidden" tabindex="-1">
+                    <div class="item selected" data-value="ad"><i class="ad flag"></i>IronMan tremblan July</div>
+                    <div class="item" data-value="ae"><i class="ae flag"></i>Marathon Montreal July</div>
+                    <div class="item" data-value="af"><i class="af flag"></i>Spartan Race Tremblant July</div>
+                    <div class="item" data-value="ag"><i class="ag flag"></i>Marathon Boston August</div>
+                    <div class="item" data-value="ai"><i class="ai flag"></i>Marathon New York City August</div>
+                    <div class="item" data-value="al"><i class="al flag"></i>Triathon Olympic Paris</div>
+                    <div class="item" data-value="am"><i class="am flag"></i>Rio Olympic Games Triathlon August</div>
+                    <div class="item" data-value="an"><i class="an flag"></i>Rio Olympic Games Decathlon August</div>
+                    <div class="item" data-value="ao"><i class="ao flag"></i>Mexico Marathon September</div>
+                  </div>
+                </div>
+                <div class="ui search selection dropdown mainSearch">
+                  <i class="users icon"></i>
 
+                    <select name="guests[number]">
+                      <option value="">1</option>
+                      <option value="1">2</option>
+                      <option value="2">3</option>
+                      <option value="3">4</option>
+                    </select><div class="default text"># Guests</div><i class="dropdown icon"></i>
+                </div>
             <div class="ui primary big button">Find Hosts</div>
           </div>
-        </div>
-
-        <div class="ui centered" style="color:gray">
-          Use additional filters  to narrow  search
-        </div>
-
-        <div class="ui row">
-
-
-          <div class="ui action left icon large input ">
-
-            <div class="ui search selection dropdown mainSearch">
-              <i class="calendar icon"></i>
-              <input type="hidden" name="date">
-              <input class="search" tabindex="0"><div class="default text">Arrival Date</div>
-              <i class="dropdown icon"></i>
-              <div class="menu transition hidden" tabindex="-1">
-                <div class="item selected" data-value="ad"><i class="ad flag"></i>IronMan tremblan July</div>
-                <div class="item" data-value="ae"><i class="ae flag"></i>Marathon Montreal July</div>
-                <div class="item" data-value="af"><i class="af flag"></i>Spartan Race Tremblant July</div>
-                <div class="item" data-value="ag"><i class="ag flag"></i>Marathon Boston August</div>
-                <div class="item" data-value="ai"><i class="ai flag"></i>Marathon New York City August</div>
-                <div class="item" data-value="al"><i class="al flag"></i>Triathon Olympic Paris</div>
-                <div class="item" data-value="am"><i class="am flag"></i>Rio Olympic Games Triathlon August</div>
-                <div class="item" data-value="an"><i class="an flag"></i>Rio Olympic Games Decathlon August</div>
-                <div class="item" data-value="ao"><i class="ao flag"></i>Mexico Marathon September</div>
-              </div>
-            </div>
-            <div class="ui search selection dropdown mainSearch">
-              <i class="calendar icon"></i>
-              <input type="hidden" name="date">
-              <input class="search" tabindex="0"><div class="default text">Departure Date</div>
-              <i class="dropdown icon"></i>
-              <div class="menu transition hidden" tabindex="-1">
-                <div class="item selected" data-value="ad"><i class="ad flag"></i>IronMan tremblan July</div>
-                <div class="item" data-value="ae"><i class="ae flag"></i>Marathon Montreal July</div>
-                <div class="item" data-value="af"><i class="af flag"></i>Spartan Race Tremblant July</div>
-                <div class="item" data-value="ag"><i class="ag flag"></i>Marathon Boston August</div>
-                <div class="item" data-value="ai"><i class="ai flag"></i>Marathon New York City August</div>
-                <div class="item" data-value="al"><i class="al flag"></i>Triathon Olympic Paris</div>
-                <div class="item" data-value="am"><i class="am flag"></i>Rio Olympic Games Triathlon August</div>
-                <div class="item" data-value="an"><i class="an flag"></i>Rio Olympic Games Decathlon August</div>
-                <div class="item" data-value="ao"><i class="ao flag"></i>Mexico Marathon September</div>
-              </div>
-            </div>
-            <div class="ui search selection dropdown mainSearch">
-              <i class="users icon"></i>
-
-              <select name="guests[number]">
-                <option value="">1</option>
-                <option value="1">2</option>
-                <option value="2">3</option>
-                <option value="3">4</option>
-              </select><div class="default text"># Guests</div><i class="dropdown icon"></i>
-            </div>
-          </div>
-
 
         <div class="ui hidden divider"></div>
 
@@ -303,9 +287,6 @@
 
                 <div class="description">
                   We can welcome 3 athletes or 1 athlete with family for weekends
-                </div>
-                <div class="meta">
-                  Hosted 2 athletes in the past 3 months
                 </div>
               </div>
               <div class="extra content">
@@ -327,9 +308,6 @@
                 <div class="description">
                   Nous sommes aussi des coureurs et nous pouvons t'héberger dans notre salon
                 </div>
-                <div class="meta">
-                  Hosted 4 athletes in the past 6 months
-                </div>
               </div>
               <div class="extra content">
                 <span class="right floated">
@@ -349,9 +327,6 @@
                 <div class="header">hébergement Elyse</div>
                 <div class="description">
                   Je ne fais pas de sport mais je peux héberger pour les compétitions de l'été. Merci de voir la description
-                </div>
-                <div class="meta">
-                  Hosted 1 athletes in the past 4 months
                 </div>
               </div>
               <div class="extra content">
@@ -492,7 +467,7 @@
         <div class="seven wide column">
           <div class="ui">
 
-            <div class="">
+            <div class="overlay">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.1627266327077!2d-73.57706568399519!3d45.526930837275636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91bc5726cbb99%3A0x9677634ad3be3789!2sHalte+24-7+-+Coworking+Montr%C3%A9al!5e0!3m2!1sen!2sca!4v1467663776228" width="100%" height="900" frameborder="0" style="border:0;margin:0;" allowfullscreen></iframe>
             </div>
           </div>

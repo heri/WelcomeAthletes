@@ -78,33 +78,6 @@
       padding: 5em 0em;
     }
 
-    .secondary.pointing.menu .toc.item {
-      display: none;
-    }
-
-    @media only screen and (max-width: 700px) {
-      .ui.fixed.menu {
-        display: none !important;
-      }
-      .secondary.pointing.menu .item,
-      .secondary.pointing.menu .menu {
-        display: none;
-      }
-      .secondary.pointing.menu .toc.item {
-        display: block;
-      }
-      .masthead.segment {
-        min-height: 350px;
-      }
-      .masthead h1.ui.header {
-        font-size: 2em;
-        margin-top: 1.5em;
-      }
-      .masthead h2 {
-        margin-top: 0.5em;
-        font-size: 1.5em;
-      }
-    }
 
     #hosts p, #upcoming p {
       font-size: 16px;
@@ -116,6 +89,50 @@
       font-weight: bold;
     }
 
+    .menu .logo {
+      padding:0.642857143em 0.84285714em;
+    }
+
+    .menu .logo img {
+      width:130px
+    }
+
+    .ui.selection.dropdown {
+      min-width: 10em;
+    }
+
+
+    @media only screen and (max-width: 700px) {
+
+      .masthead.segment {
+        min-height: 350px;
+      }
+      .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+      }
+      .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+      }
+      .menu .login, .menu .language {
+        display:none !important;
+      }
+
+      .menu .logo {
+        padding:0.242857143em 0.44285714em;
+      }
+
+      .menu .logo img {
+        width:80px;
+      }
+
+      .ui.selection.dropdown {
+        min-width: 8em;
+      }
+    }
+
+
 
   </style>
 
@@ -125,19 +142,6 @@
   <script>
   $(document)
     .ready(function() {
-
-      // // fix menu when passed
-      // $('.masthead')
-      //   .visibility({
-      //     once: false,
-      //     onBottomPassed: function() {
-      //       $('.fixed.menu').transition('fade in');
-      //     },
-      //     onBottomPassedReverse: function() {
-      //       $('.fixed.menu').transition('fade out');
-      //     }
-      //   })
-      // ;
 
       // create sidebar and attach to menu open
       $('.ui.sidebar')
@@ -157,16 +161,17 @@
 <!-- Following Menu -->
 <div class="ui large top fixed menu">
   <div class="ui container">
-    <a class="item borderless" href="index.html" style="padding:0.642857143em 0.84285714em"><img class="ui aligned image" src="http://www.welcomeathletes.com/uploads/7/8/8/2/78826622/1461515087.png" style="width:130px;"></a>
+
+    <a class="item borderless logo" href="index.html" style=""><img class="ui aligned image" src="http://www.welcomeathletes.com/uploads/7/8/8/2/78826622/1461515087.png"></a>
     <div class="right menu">
-      <div class="ui item">
+      <div class="ui item language">
         <a href="#">
           <i class="france flag"></i>
           FR
         </a>
       </div>
 
-      <div class="item">
+      <div class="item login">
         <a class="ui button" href="login.html">Log in</a>
       </div>
       <div class="item">
@@ -177,42 +182,10 @@
   </div>
 </div>
 
-<!-- Sidebar Menu -->
-<div class="ui vertical inverted sidebar menu">
-  <a class="active item" href="index.html"><img class="ui tiny aligned image" src="http://www.welcomeathletes.com/uploads/7/8/8/2/78826622/1461515087.png"></a>
-
-  <a class="item" href="login.html">Login</a>
-  <a class="item" href="login.html">Signup</a>
-</div>
-
 
 <!-- Page Contents -->
 <div class="pusher">
   <div class="ui inverted vertical masthead center aligned segment">
-
-    <!-- <div class="ui container">
-      <div class="ui large secondary white inverted menu">
-        <div class="item">
-          <div class="ui logo shape">
-            <div class="sides">
-              <div class="active ui side">
-                <a href="http://welcomeathletes.com"><img class="ui middle aligned image" src="http://www.welcomeathletes.com/uploads/7/8/8/2/78826622/1461515087.png" width="230"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="right item">
-          <div class="ui item">
-            <a href="#">
-              <i class="france flag"></i>
-              FR
-            </a>
-          </div>
-          <a class="ui item" href="login.html" >Log in</a>
-          <a href="login.html" class="ui inverted primary button">Sign Up</a>
-        </div>
-      </div>
-    </div> -->
 
     <div class="ui text container">
       <h1 class="ui inverted header">
@@ -223,7 +196,7 @@
 
       <div class="ui hidden divider"></div>
 
-      <div class="ui action left icon input large fluid">
+      <div class="ui action left icon input fluid">
         <i class="location arrow icon"></i>
         <input type="text" placeholder="Where?">
         <div class="ui search selection dropdown mainSearch">

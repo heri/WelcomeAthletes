@@ -16,95 +16,121 @@
 
   <style type="text/css">
 
-    .hidden.menu {
-      display: none;
-    }
+  .hidden.menu {
+    display: none;
+  }
 
-    .masthead {
-      background-image: url('triathletes.jpg') !important;
-      background-size: cover !important;
-    }
+  .masthead {
+    background-image: url('triathletes.jpg') !important;
+    background-size: cover !important;
+  }
+
+  .masthead.segment {
+    min-height: 700px;
+    padding: 1em 0em;
+  }
+  .masthead .logo.item img {
+    margin-right: 1em;
+  }
+  .masthead .ui.menu .ui.button {
+    margin-left: 0.5em;
+  }
+  .masthead h1.ui.header {
+    margin-top: 3em;
+    margin-bottom: 0em;
+    font-size: 4em;
+    font-weight: normal;
+  }
+  .masthead h2 {
+    font-size: 1.7em;
+    font-weight: normal;
+  }
+
+  .ui.vertical.stripe {
+    padding: 8em 0em;
+  }
+  .ui.vertical.stripe h3 {
+    font-size: 2em;
+  }
+  .ui.vertical.stripe .button + h3,
+  .ui.vertical.stripe p + h3 {
+    margin-top: 3em;
+  }
+  .ui.vertical.stripe .floated.image {
+    clear: both;
+  }
+  .ui.vertical.stripe p {
+    font-size: 1.33em;
+  }
+  .ui.vertical.stripe .horizontal.divider {
+    margin: 3em 0em;
+  }
+
+  .quote.stripe.segment {
+    padding: 0em;
+  }
+  .quote.stripe.segment .grid .column {
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+
+  .footer.segment {
+    padding: 5em 0em;
+  }
+
+
+  #hosts p, #upcoming p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .menu a {
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+  }
+
+  .menu .logo {
+    padding:0.642857143em 0.84285714em;
+  }
+
+  .menu .logo img {
+    width:130px
+  }
+
+  .ui.selection.dropdown {
+    min-width: 10em;
+  }
+
+
+  @media only screen and (max-width: 700px) {
 
     .masthead.segment {
-      min-height: 700px;
-      padding: 1em 0em;
-    }
-    .masthead .logo.item img {
-      margin-right: 1em;
-    }
-    .masthead .ui.menu .ui.button {
-      margin-left: 0.5em;
+      min-height: 350px;
     }
     .masthead h1.ui.header {
-      margin-top: 3em;
-      margin-bottom: 0em;
-      font-size: 4em;
-      font-weight: normal;
+      font-size: 2em;
+      margin-top: 1.5em;
     }
     .masthead h2 {
-      font-size: 1.7em;
-      font-weight: normal;
+      margin-top: 0.5em;
+      font-size: 1.5em;
+    }
+    .menu .login, .menu .language {
+      display:none !important;
     }
 
-    .ui.vertical.stripe {
-      padding: 8em 0em;
-    }
-    .ui.vertical.stripe h2 {
-      font-size: 3em;
-    }
-    .ui.vertical.stripe .button + h3,
-    .ui.vertical.stripe p + h3 {
-      margin-top: 3em;
-    }
-    .ui.vertical.stripe .floated.image {
-      clear: both;
-    }
-    .ui.vertical.stripe p {
-      font-size: 1.33em;
-    }
-    .ui.vertical.stripe .horizontal.divider {
-      margin: 3em 0em 1.5em 0;
+    .menu .logo {
+      padding:0.242857143em 0.44285714em;
     }
 
-    .quote.stripe.segment {
-      padding: 0em;
-    }
-    .quote.stripe.segment .grid .column {
-      padding-top: 5em;
-      padding-bottom: 5em;
+    .menu .logo img {
+      width:80px;
     }
 
-    .footer.segment {
-      padding: 5em 0em;
+    .ui.selection.dropdown {
+      min-width: 8em;
     }
-
-    .secondary.pointing.menu .toc.item {
-      display: none;
-    }
-
-    @media only screen and (max-width: 700px) {
-      .ui.fixed.menu {
-        display: none !important;
-      }
-      .secondary.pointing.menu .item,
-      .secondary.pointing.menu .menu {
-        display: none;
-      }
-      .secondary.pointing.menu .toc.item {
-        display: block;
-      }
-      .masthead.segment {
-        min-height: 350px;
-      }
-      .masthead h1.ui.header {
-        font-size: 2em;
-        margin-top: 1.5em;
-      }
-      .masthead h2 {
-        margin-top: 0.5em;
-        font-size: 1.5em;
-      }
-    }
+  }
 
     .menu a {
       color: rgba(0, 0, 0, 0.6);
@@ -163,36 +189,29 @@
 </head>
 <body>
 
-<!-- Following Menu -->
-<div class="ui large top fixed menu">
-  <div class="ui container">
-    <a class="item borderless" href="index.html" style="padding:0.642857143em 0.84285714em"><img class="ui aligned image" src="http://www.welcomeathletes.com/uploads/7/8/8/2/78826622/1461515087.png" style="width:130px;"></a>
-    <div class="right menu">
-      <div class="ui item">
-        <a href="#">
-          <i class="france flag"></i>
-          FR
-        </a>
-      </div>
+  <!-- Following Menu -->
+  <div class="ui large top fixed menu">
+    <div class="ui container">
 
-      <div class="item">
-        <a class="ui button" href="login.html">Log in</a>
-      </div>
-      <div class="item">
-        <a class="ui primary button"  href="signup.html">Sign Up</a>
-      </div>
+      <a class="item borderless logo" href="index.html" style=""><img class="ui aligned image" src="http://www.welcomeathletes.com/uploads/7/8/8/2/78826622/1461515087.png"></a>
+      <div class="right menu">
+        <div class="ui item language">
+          <a href="#">
+            <i class="france flag"></i>
+            FR
+          </a>
+        </div>
 
+        <div class="item login">
+          <a class="ui button" href="message.html"><i class="inbox icon"></i> Inbox</a>
+        </div>
+        <div class="item">
+          <a class="ui primary button"  href="profile.html"><i class="user icon"></i> Profile</a>
+        </div>
+
+      </div>
     </div>
   </div>
-</div>
-
-<!-- Sidebar Menu -->
-<div class="ui vertical inverted sidebar menu">
-  <a class="active item" href="index.html"><img class="ui small aligned image" src="http://www.welcomeathletes.com/uploads/7/8/8/2/78826622/1461515087.png"></a>
-
-  <a class="item" href="login.html">Login</a>
-  <a class="item" href="login.html">Signup</a>
-</div>
 
 
 <!-- Page Contents -->
@@ -208,7 +227,7 @@
 
               <h1 class="ui header" style="color:#e34402">
                 <i class="large inbox icon"></i>
-                Inbox
+                Mat's request
               </h1>
 
               <div class="ui hidden divider"></div>
@@ -255,11 +274,6 @@
                         </td>
                       </tr>
                     </tbody>
-                    <tfoot>
-                      <tr><th colspan="3" class="small">
-                        Notice about Welcome Atheltes Terms and conditions
-                      </th>
-                    </tr></tfoot>
                   </table>
 
 

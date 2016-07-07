@@ -234,100 +234,74 @@
 
 <!-- Page Contents -->
 <div class="pusher" style="margin-top:4em">
-
-  <div class="ui link stackable centered cards">
-
-      <div class="ui" style="margin: 4em 0">
-
-
-          <div class="ui vertical ">
-            <div class="ui text">
-
-              <h1 class="ui header" style="color:#e34402">
-                Request Booking
-              </h1>
-
-              <div class="ui hidden divider"></div>
-
-
-              <table class="ui celled table">
-                <thead>
-                  <tr>
-                    <th><div class="ui ribbon label">Hosting Request</div></th>
-                    <th>
-
-                      <div class="ui comments">
-                        <div class="comment">
-                          <a href="#" class="avatar"><img src="http://semantic-ui.com/images/avatar/small/matt.jpg"></a>
-                          <div class="content">
-                            <a class="author" href="#">Mat</a>
-                            <div class="text">Sport: triathlon</div>
-                          </div>
-                        </div>
-                      </div>
-                    </th>
-
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      Arrival
-                    </td>
-                    <td>12th July 2016</td>
-                  </tr>
-                  <tr>
-                    <td>Departure</td>
-                    <td>16th July 2016</td>
-                  </tr>
-                  <tr>
-                    <td>Number of guests</td>
-                    <td>3</td>
-                  </tr>
-                  <tr class="negative">
-                    <td>Address</td>
-                    <td>
-                      <i class="attention icon"></i> Exact Address shown when request is accepted
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-
-
-
-
-              <div class="ui comments content left aligned">
-
-                <div class="ui hidden divider"></div>
-
-                <form class="ui reply form">
-                  <div class="field">
-                    <div class="ui left icon input">
-                      <i class="flag checkered icon"></i>
-                      <input type="text" name="competition" placeholder="Name and Date of your Competition">
-                    </div>
-                  </div>
-                  <div class="field">
-                      <textarea name="message" placeholder="Write a personal message to Stéphanie"></textarea>
-                  </div>
-                    <a href="message.html" class="ui labeled submit icon primary button">
-                      <i class="icon edit"></i> Send Request to Stéphanie
-                    </a>
-
-                </form>
-
-              </div>
-
+  <div class="ui middle aligned grid text container stripe" style="padding: 3em 2em;">
+    <div class="column">
+      <h2 class="ui image header">
+        <div class="content">
+          Information
+        </div>
+      </h2>
+      <form class="ui large form">
+        <div class="ui stacked segment">
+          <div class="field">
+            <label>E-mail</label>
+            <div class="input">
+              <input type="text" name="email" placeholder="E-mailaddress" value="stephanie.chanay@gmail.com">
             </div>
-
           </div>
+          <div class="field">
+            <label>Name</label>
 
+            <div class="two fields">
+              <div class="field">
+                  <input type="text" name="firstname" placeholder="First name" value="Stephanie">
+              </div>
+              <div class="field">
+                  <input type="text" name="firstname" placeholder="Last name" value="Chanay">
+              </div>
+            </div>
+          </div>
+          <div class="field">
 
-      </div>
+            <div class="two fields">
+              <div class="field">
+                <label>Sport</label>
 
+                  <input type="text" name="firstname" placeholder="Sport" value="Triathlon">
+              </div>
+              <div class="field">
+                <label>Organisation number</label>
+
+                  <input type="text" name="firstname" placeholder="Triathlon Québec number " value="#1212AC">
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <label>Languages spoken</label>
+
+            <div class="two fields">
+              <div class="field">
+                  <input type="text" name="firstname" placeholder="1st language" value="English">
+              </div>
+              <div class="field">
+                  <input type="text" name="firstname" placeholder="2nd language" value="Spanish">
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <label>Biography</label>
+            <textarea placeholder="Je vis a montreal et je fais du velo et natation. Objectif Ironman Hawaii cette année! Ambiance calme dans mon appart en centre-ville.
+note : I also speak english"></textarea>
+          </div>
+          <div class="ui fluid large primary submit button">Save</div>
+        </div>
+
+        <div class="ui error message"></div>
+
+      </form>
+
+    </div>
   </div>
-
-
 
 
   <div class="ui inverted vertical footer segment" style="z-index: 10">

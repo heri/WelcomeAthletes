@@ -31263,7 +31263,7 @@ select.ui.dropdown {
   font-size: 1rem;
   text-align: center;
   color: rgba(0, 0, 0, 0.87);
-  border-radius: 0em 0em 0.28571429rem 0.28571429rem;
+  border-radius: 0;
   -webkit-transition: 0.2s background ease;
   transition: 0.2s background ease;
 }
